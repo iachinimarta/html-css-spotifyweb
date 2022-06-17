@@ -71,3 +71,16 @@ html {
 footer {
     height: 80px;
 }
+
+.footer-container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left .brano, .icone {
+    align-items: center;
+}
+
+.center .player-nav {
+    text-align: center;
+}
