@@ -27,19 +27,23 @@ html {
 
 .main {
     height: calc(100vh - 80px);
-
+    flex-wrap: wrap;
 }
 
-.main-navigator {
-    height: 50px;
+.containerA {
     width: calc(100% - 200px);
+}
+
+.navigator {
+    height: 50px;
     justify-content: center;
 }
 
-.main-navigator ul {
+.navigator ul {
     align-items: center;
-    
 }
+
+/* *********************************************************** <- MAIN */
 
 
 /* *********************************************************** <- FOOTER */
