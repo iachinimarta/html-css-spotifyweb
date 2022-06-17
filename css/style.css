@@ -22,17 +22,30 @@ html {
     height: 100%;
 }
 
+/* *********************************************************** <- HEADER-FIXED */
+
+.header-fixed {
+    width: calc(100% - 200px);
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 200px;
+    z-index: 999;
+}
+
 
 /* *********************************************************** <- MAIN */
 
 .main {
     height: calc(100vh - 80px);
     flex-wrap: wrap;
+    overflow-y: scroll;
 }
 
 .containerA {
     width: calc(100% - 200px);
-    overflow-y: scroll;
+    margin-top: 60px;
+    
 }
 
 .navigator {
