@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 2px solid blue;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.debug {
+
+    background-color: aquamarine;
+}
+
+
+/* *********************************************************** <- SIDEBAR */
+
+.sidebar {
+    width: 200px;
+    height: 100%;
+}
+
+
+/* *********************************************************** <- MAIN */
+
+.main {
+    height: calc(100vh - 80px);
+
+}
+
+.main-navigator {
+    height: 50px;
+    width: calc(100% - 200px);
+    justify-content: center;
+}
+
+.main-navigator ul {
+    align-items: center;
+    
+}
+
+
+/* *********************************************************** <- FOOTER */
+
+footer {
+    height: 80px;
+}
