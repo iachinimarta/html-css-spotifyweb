@@ -14,6 +14,10 @@ html {
     background-color: aquamarine;
 }
 
+body {
+    height: 100vh;
+    width: 100%;
+}
 
 /* *********************************************************** <- SIDEBAR */
 
@@ -31,7 +35,10 @@ html {
     top: 0;
     left: 200px;
     z-index: 999;
+    justify-content: flex-end;
+    align-items: center;
 }
+
 
 
 /* *********************************************************** <- MAIN */
@@ -39,12 +46,14 @@ html {
 .main {
     height: calc(100vh - 80px);
     flex-wrap: wrap;
-    overflow-y: scroll;
+    
 }
 
 .containerA {
     width: calc(100% - 200px);
+    height: calc(100vh - 144px);
     margin-top: 60px;
+    overflow-y: scroll;
     
 }
 
@@ -86,6 +95,7 @@ footer {
 }
 
 .footer-container {
+    height: 100%;
     justify-content: space-between;
     align-items: center;
 }
