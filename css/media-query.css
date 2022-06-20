@@ -1,6 +1,6 @@
 @media all and (max-width: 992px) {
     .song {
-        width: calc(100% / 4);
+        width: calc(100% / 4 - 40px);
     }
 
 
@@ -9,11 +9,18 @@
 
 @media all and (max-width: 768px) {
     .song {
-        width: calc(100% / 2);
+        width: calc(100% / 2 - 40px);
+    }
+    .sidebar {
+        display: none;
     }
 
+    .sidebar-small {
+        display: block;
+    }
 }
 
 @media all and (max-width: 576px) {
+    
  
 }
