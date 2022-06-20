@@ -22,6 +22,7 @@ li {
 .h1 {
     font-size: 2rem;
     color: white;
+    font-weight: bold;
 }
 
 .big-text {
@@ -32,4 +33,8 @@ li {
 .small-text {
     font-size: 0.8rem;
     text-align: center;
+}
+
+i {
+    margin-right: 0.5rem;
 }
