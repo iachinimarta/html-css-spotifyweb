@@ -171,7 +171,14 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    display: none;
 }
+
+.song-wrapper:hover .overlay {
+    display: block;
+}
+
+
 
 /* *********************************************************** <- RELATED */
 
@@ -234,6 +241,21 @@ footer {
     padding: 0 1rem;
 }
 
+.play-circle {
+    border: 2px solid white;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.play-circle .fa-play {
+        padding: 0px;
+        margin: 0;
+        vertical-align: middle;
+      
+}
+
 .player-nav .barra {
     display: inline-block;
     width: 400px;
@@ -242,6 +264,13 @@ footer {
     margin: 0 1rem;
     background-color: var(--grigio-testo);
     margin-bottom: 0.2rem;
+}
+
+.status {
+    background-color: white;
+    height: 100%;
+    width: 50px;
+    border-radius: 2px;
 }
 
 .player-nav .timer {

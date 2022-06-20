@@ -1,9 +1,16 @@
 @media all and (max-width: 992px) {
+    .song {
+        width: calc(100% / 4);
+    }
+
 
 }
 
 
 @media all and (max-width: 768px) {
+    .song {
+        width: calc(100% / 2);
+    }
 
 }
 
