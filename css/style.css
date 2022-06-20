@@ -8,6 +8,12 @@
 html {
     font-family: 'Open Sans', sans-serif;
     overflow-y: hidden;
+    font-size: 1.3rem;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
 }
 
 .debug {
@@ -20,10 +26,27 @@ html {
 .sidebar {
     width: 200px;
     height: 100%;
+    background-color: var(--nero-spotify);
+    color: var(--grigio-testo);
+    /* flex-shrink: 0; */
 }
 
 .playlist-scroll {
     overflow-y: auto;
+}
+
+.sidebar-top {
+    width: 100%;
+    height: calc(100% - 40px);
+}
+
+.sidebar-top img {
+    width: 100%;
+    display: block;
+}
+
+.sidebar-bottom {
+    height: 40px;
 }
 
 /* *********************************************************** <- HEADER-FIXED */
@@ -37,8 +60,13 @@ html {
     z-index: 999;
     justify-content: flex-end;
     align-items: center;
+    background-color: var(--nero-spotify);
 }
 
+.header-fixed .btn {
+    margin-right: 1rem;
+    color: white;
+}
 
 
 /* *********************************************************** <- MAIN */
@@ -46,6 +74,7 @@ html {
 .main {
     /* height: calc(100% - 80px); */
     flex-wrap: wrap;
+    background-color: var(--sfondo-main);
     
 }
 
@@ -55,6 +84,10 @@ html {
     margin-top: 60px;
     overflow-y: auto;
     
+}
+
+.containerA li {
+    color: var(--grigio-testo);
 }
 
 .navigator {
@@ -68,16 +101,26 @@ html {
 
 /* *********************************************************** <- RECENTLY-LIST */
 
+.recently-list .small-text {
+    color: var(--grigio-testo);
+}
+
 .recently-list .song {
     width: calc(100% / 6);
+    text-align: center;
 }
 
 .song-wrapper {
     position: relative;
 }
 
+.song img {
+    width: 100%;
+    display: block;
+}
+
 .overlay {
-    background-color: rgba(0, 0, 0, 0.201);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -85,19 +128,25 @@ html {
     left: 0;
 }
 
+/* *********************************************************** <- RELATED */
+
+.suggerimenti.small-text {
+    text-align: left;
+    color: var(--grigio-testo);
+}
+
+
 /* *********************************************************** <- FOOTER */
 
 footer {
     height: 80px;
+    background-color: var(--sfondo-footer);
+    color: white;
 }
 
 .footer-container {
     height: 100%;
     justify-content: space-between;
-    align-items: center;
-}
-
-.left .brano, .icone {
     align-items: center;
 }
 

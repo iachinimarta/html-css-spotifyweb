@@ -1,7 +1,35 @@
+:root {
+    --grigio-testo: #63656b;
+    --sfondo-main: #141922;
+    --sfondo-footer: #282828;
+    --nero-spotify: #080b12;
+}
+
 .d-flex {
     display: flex;
 }
 
 li {
     list-style: none;
+}
+
+.btn {
+    border-radius: 30px;
+    border: 2px solid white;
+    padding: 0.5rem 1rem;
+}
+
+.h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+.big-text {
+    color: white;
+    text-align: center;
+}
+
+.small-text {
+    font-size: 0.8rem;
+    text-align: center;
 }

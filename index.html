@@ -7,6 +7,7 @@
         <title>Spotify</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/regole-comuni.css">
+        <link rel="stylesheet" href="css/media-query.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,38 +18,41 @@
         
         <div class="main d-flex">
             <div class="sidebar">
-                <div class="logo">IMG</div>
+                <div class="sidebar-top">
+                    <img src="img/logo.svg" alt="logo"/>
 
-                <div class="naviga"> 
-                    <div class="home">Home</div>
-                    <div class="cerca">Cerca</div>
-                    <div class="libreria">La tua libreria</div>
-                </div>
-
-                <div class="naviga-playlist">
-                    <div class="playlist">PLAYLIST</div>
-                    <div class="new-playlist">
-                        <span class="add">IMG</span>
-                        <span class="add-playlist">Crea Playlist</span>
-                    </div>
-                    <div class="playlist-scroll">
-                        <div class="nome-playlist">Nome Playlist</div>
+                    <div class="naviga"> 
+                        <div class="home">Home</div>
+                        <div class="cerca">Cerca</div>
+                        <div class="libreria">La tua libreria</div>
                     </div>
 
-                    <div class="sidebar-bottom">
-                        <div class="installa">
-                            <span class="app app-icona">IMG</span>
-                            <span class="app app-text">Installa app</span>
+                    <div class="naviga-playlist">
+                        <div class="playlist">PLAYLIST</div>
+                        <div class="new-playlist">
+                            <span class="add">IMG</span>
+                            <span class="add-playlist">Crea Playlist</span>
                         </div>
-                        <div class="user">
-                            <span class="user-image">IMG</span>
-                            <span class="user-name">John Doe</span>
+                        <div class="playlist-scroll">
+                            <div class="nome-playlist">Nome Playlist</div>
                         </div>
+
                     </div>
                 </div>
 
                 
+                <div class="sidebar-bottom">
+                    <div class="installa">
+                        <span class="app app-icona">IMG</span>
+                        <span class="app app-text">Installa app</span>
+                    </div>
+                    <div class="user">
+                        <span class="user-image">IMG</span>
+                        <span class="user-name">John Doe</span>
+                    </div>
+                </div>
                 
+
             </div>
 
             <div class="header-fixed d-flex">
@@ -73,39 +77,60 @@
                 </div>
             
                 <div class="recently-list">
-                    <div class="recently">Recently played</div>
+                    <div class="h1 recently">Recently played</div>
                     <div class="songs-list d-flex">
                         <div class="song">
                             <div class="song-wrapper">
-                              CANZONE.1
-                              <div class="overlay"></div> 
+                              <img src="img/metal_lifting.jpg" alt="copertina-1"/>
+                              <div class="overlay"></div>
                             </div>
+                            <div class="big-text">Heavy Metal</div>
                             <div class="small-text">Subtitle</div>
 
                         </div>
 
                         <div class="song">
-                            CANZONE.1
+                            <div class="song-wrapper">
+                                <img src="img/stranger.jpeg" alt="copertina-2"/>
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="big-text">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</div>
                             <div class="small-text"> Kyle Dixon & Michael Stein</div>
 
                         </div>
                         <div class="song">
-                            CANZONE.1
+                            <div class="song-wrapper">
+                                <img src="img/aquietplace.jpeg" alt="copertina-3"/>
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="big-text">A quiet place</div>
                             <div class="small-text"> Subtitle</div>
 
                         </div>
                         <div class="song">
-                            CANZONE.1
+                            <div class="song-wrapper">
+                                <img src="img/split.jpeg" alt="copertina-3"/>
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="big-text">Split</div>
                             <div class="small-text"> Subtitle</div>
 
                         </div>
                         <div class="song">
-                            CANZONE.1
+                            <div class="song-wrapper">
+                                <img src="img/cure.jpeg" alt="copertina-4"/>
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="big-text">A cure for wellness</div>
                             <div class="small-text"> Subtitle</div>
 
                         </div>
                         <div class="song">
-                            CANZONE.1
+                            <div class="song-wrapper">
+                                <img src="img/sinister.jpeg" alt="copertina-5"/>
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="big-text">Sinister</div>
                             <div class="small-text"> Subtitle</div>
 
                         </div>
@@ -114,27 +139,29 @@
                 </div>
 
                 <div class="related-list">
-                    <div class="related">Creato per John Doe</div>
-                    <div class="small-text"> Più ascolti, più accurati saranno i suggerimenti</div>
+                    <div class="h1 related">Creato per John Doe</div>
+                    <div class="suggerimenti small-text"> Più ascolti, più accurati saranno i suggerimenti</div>
                     <div class="songs-list d-flex">
                         <div class="song">
-                            CANZONE.1
+                            <img src="img/radar.jpeg" alt="release"/>
+                            <div class="big-text">Release Radar</div>
                         </div>
                         <div class="song">
-                            CANZONE.1
+                            <img src="img/mixdaily.jpeg" alt="daily"/>
+                            <div class="big-text">Daily Mix 1</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="popular-list">
-                    <div class="popular">Artisti più popolari</div>
-                    <div class="small-text"> Più ascolti, più accurati saranno i suggerimenti</div>
+                    <div class="h1 popular">Artisti più popolari</div>
+                    <div class="suggerimenti small-text"> Più ascolti, più accurati saranno i suggerimenti</div>
                     <div class="songs-list d-flex">
                         <div class="song">
-                            CANZONE.1
+                            <img src="img/youg.jpeg" alt="popular">
                         </div>
                         <div class="song">
-                            CANZONE.1
+                            <img src="img/einaudi.jpeg" alt="popular">
                         </div>
                     </div>
                 </div>
