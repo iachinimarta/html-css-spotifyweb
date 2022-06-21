@@ -234,6 +234,10 @@ html {
     color: var(--grigio-testo);
 }
 
+.popular-list img {
+    border-radius: 50%;
+}
+
 
 /* *********************************************************** <- FOOTER */
 
@@ -244,7 +248,7 @@ footer {
 }
 
 .footer-container {
-    height: 100%;
+    height: 80px;
     justify-content: space-between;
     align-items: center;
 }
@@ -282,6 +286,11 @@ footer {
     padding: 0 1rem;
 }
 
+.player-nav {
+    display: flex;
+    align-items: center;
+}
+
 .player-nav .barra {
     display: inline-block;
     width: 400px;
@@ -289,7 +298,6 @@ footer {
     border-radius: 2px;
     margin: 0 1rem;
     background-color: var(--grigio-testo);
-    margin-bottom: 0.2rem;
 }
 
 .status {

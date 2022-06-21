@@ -3,11 +3,36 @@
         width: calc(100% / 4 - 40px);
     }
 
+    .right {
+        display: flex;
+        align-items: center;
+    }
+
 
 }
 
 
 @media all and (max-width: 768px) {
+    .containerA {
+        width: calc(100% - 50px);
+    }
+
+    .header-fixed {
+        width: calc(100% - 50px);
+        left: 50px;
+    }
+    .navigator ul {
+        width: 100%;
+    }
+
+    .navigator li {
+        margin: 0;
+    }
+
+    .navigator a {
+        margin-right: 1rem;
+    }
+
     .song {
         width: calc(100% / 2 - 40px);
     }
@@ -18,6 +43,20 @@
     .sidebar-small {
         display: block;
     }
+
+    .left .icone {
+        flex-direction: column;
+    }
+
+    .player-nav .barra {
+        width: 200px;
+    }
+
+    .player i {
+        padding: 0.5rem;
+    }
+
+    
 }
 
 @media all and (max-width: 576px) {
