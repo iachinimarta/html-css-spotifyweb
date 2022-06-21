@@ -238,6 +238,7 @@ html {
     margin-top: 1rem;
 }
 
+
 .song-wrapper {
     position: relative;
 }
@@ -255,6 +256,15 @@ html {
     top: 0;
     left: 0;
     display: none;
+}
+
+.overlay-play {
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .round {
@@ -432,4 +442,81 @@ footer .nome-artista:hover {
 
 .cursor:hover {
     transform: scale(1.3);
+}
+
+
+/* *********************************************************** <- MEDIA-QUERY*/
+
+@media all and (max-width: 992px) {
+    .song {
+        width: calc(100% / 4 - 40px);
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+    }
+
+    .brano {
+        align-items: center;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .containerA {
+        width: calc(100% - 50px);
+    }
+
+    .header-fixed {
+        width: calc(100% - 50px);
+        left: 50px;
+    }
+    .navigator ul {
+        width: 100%;
+    }
+
+    .navigator li {
+        margin-right: 1rem;
+    }
+
+    .song {
+        width: calc(100% / 2 - 40px);
+    }
+    .sidebar {
+        display: none;
+    }
+
+    .sidebar-small {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .player-nav .barra {
+        width: 200px;
+    }
+
+    .player i {
+        padding: 0.5rem;
+    }
+}
+
+@media all and (max-width: 576px) {
+    footer .brano-img {
+        display: none;
+    }
+
+    footer .brano {
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+
+    footer .brano-nome {
+        margin: 0;
+    }
+
+    .right .barra-volume {
+        display: none;
+    }
 }
