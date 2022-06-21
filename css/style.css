@@ -22,6 +22,7 @@ html {
     flex-direction: column;
     justify-content: space-between;
     /* overflow: hidden; */
+    font-size: 0.8rem;
 }
 
 .sidebar a {
@@ -73,7 +74,6 @@ html {
 }
 
 .installa {
-    font-size: 0.8rem;
     padding-bottom: 0.5rem;
     /* height: 20px; */
 }
@@ -133,10 +133,6 @@ html {
     display: block;
     color: white;
     padding-bottom: 1rem;  
-}
-
-.installa {
-    font-size: 1.2rem;
 }
 
 .sidebar-small .user-image {
