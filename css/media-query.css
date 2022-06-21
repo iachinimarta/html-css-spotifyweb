@@ -8,6 +8,10 @@
         align-items: center;
     }
 
+    .brano {
+        align-items: center;
+    }
+
 
 }
 
@@ -42,10 +46,9 @@
 
     .sidebar-small {
         display: block;
-    }
-
-    .left .icone {
+        display: flex;
         flex-direction: column;
+        justify-content: space-between;
     }
 
     .player-nav .barra {
@@ -55,6 +58,8 @@
     .player i {
         padding: 0.5rem;
     }
+
+    
 
     
 }
