@@ -1,3 +1,5 @@
+/* *********************************************************** <- REGOLE COMUNI */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +9,53 @@
 
 html {
     font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --grigio-testo: #63656b;
+    --sfondo-main: #141922;
+    --sfondo-footer: #282828;
+    --nero-spotify: #080b12;
+}
+
+.d-flex {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+.btn {
+    border-radius: 30px;
+    border: 2px solid white;
+    padding: 0.5rem 1rem;
+}
+
+.h1 {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.suggerimenti {
+    margin-bottom: 1rem;
+}
+
+.big-text {
+    color: white;
+    text-align: center;
+    margin-top: 0.8rem;
+}
+
+.small-text {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+i {
+    margin-right: 0.5rem;
 }
 
 /* *********************************************************** <- SIDEBAR */
@@ -53,8 +102,13 @@ html {
     margin-bottom: 1rem;
 }
 
+.playlist, .new-playlist {
+    margin: 10px 0;
+}
+
 .new-playlist  a {
     display: inline-block;
+    font-size: 1rem;
 }
 
 .home, .playlist, .user-name {
@@ -107,6 +161,10 @@ html {
     display: inline-block;
     line-height: 30px;
     vertical-align: middle;
+}
+
+.sidebar li {
+    padding: 5px 0;
 }
 
 /* *********************************************************** <- SIDEBAR-SMALL */
@@ -405,10 +463,6 @@ footer {
 }
 
 .sidebar a:hover {
-    color: white;
-}
-
-.sidebar li:hover {
     color: white;
 }
 

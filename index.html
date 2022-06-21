@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Spotify</title>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/regole-comuni.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,19 +17,23 @@
             <div class="sidebar">
                 <div class="sidebar-top">
                     <img src="img/logo.svg" alt="logo"/>
-
-                    <div class="naviga"> 
-                        <a href="#" class="home"><i class="fa-solid fa-house"></i>Home</a>
-                        <a href="#" class="cerca"><i class="fa-solid fa-magnifying-glass"></i>Cerca</a>
-                        <a href="#" class="libreria"><i class="fa-solid fa-bars-staggered"></i>La tua libreria</a>
-                    </div>
-
+                    <ul class="naviga">
+                        <li><a href="#" class="home"><i class="fa-solid fa-house"></i>Home</a></li>
+                        <li><a href="#" class="cerca"><i class="fa-solid fa-magnifying-glass"></i>Cerca</a></li>
+                        <li><a href="#" class="libreria"><i class="fa-solid fa-bars-staggered"></i>La tua libreria</a></li>
+                    </ul>
+                    
                     <div class="naviga-playlist">
                         <div class="playlist">PLAYLIST</div>
+
                         <div class="new-playlist">
                             <a href="#" class="add"><i class="fa-solid fa-square-plus"></i>Crea Playlist</a>
                         </div>
+
                         <ul class="playlist-scroll">
+                            <li> <a href="#">New Playlist</a> </li>
+                            <li> <a href="#">New Playlist</a> </li>
+                            <li> <a href="#">New Playlist</a> </li>
                             <li> <a href="#">New Playlist</a> </li>
                             <li> <a href="#">New Playlist</a> </li>
                             <li> <a href="#">New Playlist</a> </li>
@@ -44,11 +47,13 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="sidebar-bottom">
-                    <div class="installa">
-                        <a href="#"><i class="app app-icona fa-solid fa-circle-arrow-down"></i>Installa app</a>
-                    </div>
+                    <ul>
+                        <li class="installa">
+                            <a href="#"><i class="app app-icona fa-solid fa-circle-arrow-down"></i>Installa app</a>
+                        </li>
+                    </ul>
                     <div class="user">
                         <div class="user-image">
                             <img src="img/profile.svg" alt="profile"/>
