@@ -30,10 +30,6 @@ html {
     text-decoration: none;
 }
 
-.sidebar a:hover {
-    color: white;
-}
-
 .sidebar .home {
     color: white;
 }
@@ -58,10 +54,6 @@ html {
 
 .new-playlist  a {
     display: inline-block;
-}
-
-.add:hover {
-    transform: scale(1.3);
 }
 
 .home, .playlist, .user-name {
@@ -90,10 +82,6 @@ html {
     display: inline-block;
 }
 
-.installa a:hover {
-    transform: scale(1.3);
-}
-
 .user {
     border-top: 1px solid var(--grigio-testo);
     padding-top: 0.5rem;
@@ -113,7 +101,6 @@ html {
 .user-image img {
     height: 85%;
     width: 85%;
-    
 }
 
 .user-name {
@@ -148,14 +135,9 @@ html {
     padding-bottom: 1rem;  
 }
 
-.sidebar-small a:hover {
-    transform: scale(1.2);
-}
 .installa {
     font-size: 1.2rem;
 }
-
-
 
 .sidebar-small .user-image {
     display: inline-block;
@@ -165,8 +147,6 @@ html {
 .user {
     border: none;
 }
-
-
 
 /* *********************************************************** <- HEADER-FIXED */
 
@@ -191,7 +171,6 @@ html {
     text-decoration: none;
 }
 
-
 /* *********************************************************** <- MAIN */
 
 .main {
@@ -199,15 +178,12 @@ html {
     height: calc(100% - 80px);
     flex-wrap: wrap;
     background-color: var(--sfondo-main);
-    
 }
 
 .containerA {
     width: calc(100% - 200px);
     height: calc(100% - 80px);
     margin-top: 60px;
-    
-    
 }
 
 .navigator {
@@ -223,11 +199,10 @@ html {
 
 .navigator li {
     margin: 0 1rem;
-    
 }
 
-.navigator li:hover {
-    border-bottom: 2px solid greenyellow;
+.navigator .border-green {
+    border-bottom: 1px solid greenyellow;
 }
 
 .navigator a {
@@ -244,7 +219,6 @@ html {
 /* *********************************************************** <- RECENTLY-LIST */
 .recently-list {
     margin-left: 10px;
-    
 }
 
 .recently-list .small-text {
@@ -287,12 +261,6 @@ html {
     border-radius: 50%;
 }
 
-.song-wrapper:hover .overlay {
-    display: block;
-}
-
-
-
 /* *********************************************************** <- RELATED */
 .related-list {
     margin-left: 10px;
@@ -316,7 +284,6 @@ html {
     border-radius: 50%;
 }
 
-
 /* *********************************************************** <- FOOTER */
 
 footer {
@@ -332,9 +299,6 @@ footer {
 }
 
 /* *********************************************************** <- FOOTER LEFT*/
-.icone {
-    align-items: center;
-}
 
 .brano-img {
     height: 50px;
@@ -353,6 +317,15 @@ footer {
     margin-right: 2rem;
 }
 
+.nome-artista a {
+    color: white;
+    text-decoration: none;
+}
+
+.icone {
+    color: var(--grigio-testo);
+    align-items: center;
+}
 
 /* *********************************************************** <- FOOTER CENTER*/
 
@@ -364,10 +337,6 @@ footer {
     padding: 0 1rem;
     font-size: 1.5rem;
     padding-bottom: 0.5rem;
-}
-
-footer i:hover {
-    transform: scale(1.5);
 }
 
 .player-nav {
@@ -390,11 +359,6 @@ footer i:hover {
     width: 50px;
     border-radius: 2px;
     position: relative;
-    
-}
-
-.status:hover {
-    background-color: greenyellow;
 }
 
 .cursor {
@@ -406,10 +370,6 @@ footer i:hover {
     position: absolute;
     bottom: -5px;
     right: -10px;
-}
-
-.cursor:hover {
-    transform: scale(1.3);
 }
 
 .player-nav .timer {
@@ -426,4 +386,50 @@ footer i:hover {
     background-color: var(--grigio-testo);
     margin-bottom: 0.2rem;
     margin-right: 0.5rem;
+}
+
+/* *********************************************************** <- HOVER*/
+
+.header-fixed .btn:hover {
+    transform: scale(1.1);
+}
+
+.navigator li a:hover {
+    color: white;
+}
+
+.sidebar a:hover {
+    color: white;
+}
+
+.sidebar li:hover {
+    color: white;
+}
+
+.sidebar-small a:hover {
+    transform: scale(1.2);
+}
+
+.song-wrapper:hover .overlay {
+    display: block;
+}
+
+footer .left i:hover {
+    color: white;
+}
+
+footer .center i:hover {
+    transform: scale(1.1);
+}
+
+footer .nome-artista:hover {
+    text-decoration: underline;
+}
+
+.status:hover {
+    background-color: greenyellow;
+}
+
+.cursor:hover {
+    transform: scale(1.3);
 }
