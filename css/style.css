@@ -338,7 +338,8 @@ footer {
 }
 
 .footer-container {
-    height: 80px;
+    height: 100%;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
 }
@@ -363,7 +364,7 @@ footer {
 }
 
 .nome-artista a {
-    color: white;
+    color: var(--grigio-testo);    
     text-decoration: none;
 }
 
@@ -401,13 +402,13 @@ footer {
 .status {
     background-color: white;
     height: 100%;
-    width: 50px;
+    width: 40%;
     border-radius: 2px;
     position: relative;
 }
 
 .cursor {
-    display: inline-block;
+    display: none;
     height: 15px;
     width: 15px;
     border-radius: 50%;
@@ -471,8 +472,8 @@ footer .nome-artista:hover {
     background-color: greenyellow;
 }
 
-.cursor:hover {
-    transform: scale(1.3);
+.status:hover .cursor {
+    display: block;
 }
 
 /* *********************************************************** <- MEDIA-QUERY*/
@@ -489,6 +490,10 @@ footer .nome-artista:hover {
 
     .brano {
         align-items: center;
+    }
+
+    footer .icone {
+        flex-direction: column;
     }
 }
 
